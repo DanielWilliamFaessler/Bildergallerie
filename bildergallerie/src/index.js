@@ -1,17 +1,51 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React, { Component } from 'react';
+import ReactDOM from 'react-dom';
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel } from 'react-responsive-carousel';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+    <Carousel>
+        <div>
+            <img src="assets/1.jpg" />
+            <p className="legend">Legend 1</p>
+        </div>
+        <div>
+            <img src="assets/1.jpg" />
+            <p className="legend">Legend 2</p>
+        </div>
+        <div>
+            <img src="assets/1.jpg" />
+            <p className="legend">Legend 3</p>
+        </div>
+        <div>
+            <img src="assets/1.jpg" />
+            <p className="legend">Legend 3</p>
+        </div>
+        <div>
+            <img src="assets/1.jpg" />
+            <p className="legend">Legend 3</p>
+        </div>
+        <div>
+            <img src="assets/1.jpg" />
+            <p className="legend">Legend 3</p>
+        </div>
+        <div>
+            <img src="assets/1.jpg" />
+            <p className="legend">Legend 3</p>
+        </div>
+        <div>
+            <img src="assets/1.jpg" />
+            <p className="legend">Legend 3</p>
+        </div>
+        <div>
+            <img src="assets/1.jpg" />
+            <p className="legend">Legend 3</p>
+        </div>
+        <div>
+            <img src="assets/1.jpg" />
+            <p className="legend">Legend 3</p>
+        </div>
+    </Carousel>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
